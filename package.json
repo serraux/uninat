@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "build": "postcss style/styles.css --output css/styles.css",
-    "watch": "postcss style/styles.css --output css/styles.css --watch"
+    "watch": "postcss style/styles.css --output css/styles.css --watch",
+    "prebuild": " NODE_ENV=production npm run build:tailwind "
   },
   "repository": {
     "type": "git",
